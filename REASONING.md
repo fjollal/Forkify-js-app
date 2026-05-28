@@ -31,3 +31,16 @@ Roadmap:
 15.Storing Bookmarks with localStorage
 <br>
 16.Uploading a New Recipe
+
+<br>
+Steps during project
+<br>
+1.Inicializimi i nje projekti me npm init permes ksaj ko mu kriju .json file
+<br>
+2.Instalimi i parcel ne terminal npm i parcel -D
+<br>
+3.Per me instalu beten npm i parcel@next -D
+<br>
+4.Parcel :i lidh automatikisht,e starton serverin lokal,e refreshon faqen vet kur ndryshon kodin,e optimizon projektin për production
+<br>
+5.Per me fillu parcel ne terminal e shkrujm npm run start

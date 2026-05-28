@@ -1,0 +1,27 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "keywords": [
+    "Fjolla123"
+  ],
+  "homepage": "https://github.com/fjollal/Forkify-js-app#readme",
+  "bugs": {
+    "url": "https://github.com/fjollal/Forkify-js-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjollal/Forkify-js-app.git"
+  },
+  "license": "ISC",
+  "author": "Fjolla Lushta",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
