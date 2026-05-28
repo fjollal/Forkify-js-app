@@ -43,4 +43,34 @@ Steps during project
 <br>
 4.Parcel :i lidh automatikisht,e starton serverin lokal,e refreshon faqen vet kur ndryshon kodin,e optimizon projektin për production
 <br>
-5.Per me fillu parcel ne terminal e shkrujm npm start
+5.I kom shtu html dhe sass(aka css) files 
+<br>
+6.Per me fillu parcel ne terminal e shkrujm npm start
+<br>
+7.Tek controllers.js pas fetching te API kom vazhdu me rendering the recipe
+<br>
+8.Ne terminal e kom instalu dy dependencies core-js dhe regenerator-runtime duke e shkrujt keshtu npm i core-js regenerator-runtime
+<br>
+9.
+<br>
+10.
+<br>
+11.
+<br>
+12.
+<br>
+13.
+<br>
+14.
+<br>
+15.
+<br>
+16.
+<br>
+17.
+<br>
+18.
+<br>
+19.
+<br>
+20.
