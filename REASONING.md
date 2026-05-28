@@ -4,7 +4,7 @@ Roadmap:
 <br>
 2.Loading a Recipe from API
 <br>
-3.Rendering the Receipe
+3.Rendering the Recipe
 <br>
 4.Listening For load and hashchange Events
 <br>
@@ -30,4 +30,4 @@ Roadmap:
 <br>
 15.Storing Bookmarks with localStorage
 <br>
-16.Uploading a New Receipe
+16.Uploading a New Recipe
