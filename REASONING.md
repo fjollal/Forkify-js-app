@@ -39,8 +39,8 @@ Steps during project
 <br>
 2.Instalimi i parcel ne terminal npm i parcel -D
 <br>
-3.Per me instalu beten npm i parcel@next -D
+3.Per me instalu beten npm i parcel@2 -D
 <br>
 4.Parcel :i lidh automatikisht,e starton serverin lokal,e refreshon faqen vet kur ndryshon kodin,e optimizon projektin për production
 <br>
-5.Per me fillu parcel ne terminal e shkrujm npm run start
+5.Per me fillu parcel ne terminal e shkrujm npm start

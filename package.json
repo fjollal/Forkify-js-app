@@ -16,12 +16,12 @@
   "license": "ISC",
   "author": "Fjolla Lushta",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
     "parcel": "^2.16.4"
   }
 }
