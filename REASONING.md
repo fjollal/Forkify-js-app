@@ -1,38 +1,4 @@
-Roadmap:
-<br>
-1.Project Overview and Planning
-<br>
-2.Loading a Recipe from API
-<br>
-3.Rendering the Recipe
-<br>
-4.Listening For load and hashchange Events
-<br>
-5.The MVC Architecture
-<br>
-6.Refactoring for MVC
-<br>
-7.Helpers and Configuration Files
-<br>
-8.Event Handlers in MVC:Publisher-Subscriber Pattern
-<br>
-9.Implementing Error and Success Messages
-<br>
-10.Implementing Search Results
-<br>
-11.Implementing Pagination
-<br>
-12.Updating receipe Servings
-<br>
-13.Developing a DOM Updating Algorithm
-<br>
-14.Implementing Bookmarks
-<br>
-15.Storing Bookmarks with localStorage
-<br>
-16.Uploading a New Recipe
 
-<br>
 Steps during project
 <br>
 1.Inicializimi i nje projekti me npm init permes ksaj ko mu kriju .json file
@@ -51,11 +17,11 @@ Steps during project
 <br>
 8.Ne terminal e kom instalu dy dependencies core-js dhe regenerator-runtime duke e shkrujt keshtu npm i core-js regenerator-runtime
 <br>
-9.
+9.MVC - model(tabelat,query,lidhja me databazen,CRUD operations) view(HTML pages,JSON response,frontend) controler(pranon request,therret modelin,kthen response)
 <br>
-10.
+10.Fractional përdoret në Haskell për numra që kanë pjesë dhjetore (fractions)
 <br>
-11.
+11.Per me instalu fractional ne terminal e shkrujm keshtu npm install fractional
 <br>
 12.
 <br>
