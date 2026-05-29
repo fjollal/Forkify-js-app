@@ -1,22 +1,30 @@
-class searchView{
-    _parentElement=document.querySelector('.search');
+class SearchView {
+  _parentElementSelector = '.search';
 
-    getQuery(){
-        const query=this._parentElement.querySelector('.search__field').value;
-        this._clearInput();
-        return query;
-    }
+  get _parentElement() {
+    return document.querySelector(this._parentElementSelector);
+  }
 
-    _clearInput(){
-        this._parentElement.querySelector('.search__field').value='';
-    }
+  getQuery() {
+    const field = this._parentElement?.querySelector('.search__field');
+    if (!field) return '';
+    return field.value.trim();
+  }
 
-    addHandlerSearch(handler){
-        this._parentElement.addEventListener('submit',function(e) {
-            e.preventDefault();
-            handler();
-        })
-    }
+  clearInput() {
+    const field = this._parentElement?.querySelector('.search__field');
+    if (field) field.value = '';
+  }
+
+  addHandlerSearch(handler) {
+    const form = this._parentElement;
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      handler();
+    });
+  }
 }
 
-export default new searchView();
+export default new SearchView();

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en"><head><script type="importmap">{"imports":{"fNVyn":"/icons.0809ef97.svg"}}</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="/favicon.8b2f57bf.png" type="image/x-icon">
 
     <link rel="stylesheet" href="/Forkify-js-app.f7626f62.css">
-    <script defer="" src="/Forkify-js-app.62406edb.js"></script>
 
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
@@ -17,7 +16,7 @@
         <img src="/logo.726d37a8.png" alt="Logo" class="header__logo">
         <form class="search">
           <input type="text" class="search__field" placeholder="Search over 1,000,000 recipes...">
-          <button class="btn search__btn">
+          <button type="submit" class="btn search__btn">
             <svg class="search__icon">
               <use href="/icons.21bad73c.svg#icon-search"></use>
             </svg>
@@ -112,11 +111,7 @@
           </button> -->
         </div>
 
-        <p class="copyright">
-          © Copyright by
-          <a class="twitter-link" target="_blank" href="https://twitter.com/jonasschmedtman">Jonas Schmedtmann</a>. Use for learning or your portfolio. Don't use to teach. Don't claim
-          as your own.
-        </p>
+       
       </div>
 
       <div class="recipe">
@@ -249,27 +244,27 @@
         <div class="upload__column">
           <h3 class="upload__heading">Recipe data</h3>
           <label>Title</label>
-          <input value="TEST23" required="" name="title" type="text">
+          <input required="" name="title" type="text" placeholder="My recipe">
           <label>URL</label>
-          <input value="TEST23" required="" name="sourceUrl" type="text">
+          <input required="" name="sourceUrl" type="url" placeholder="https://example.com/recipe">
           <label>Image URL</label>
-          <input value="TEST23" required="" name="image" type="text">
+          <input required="" name="image" type="url" placeholder="https://example.com/image.jpg">
           <label>Publisher</label>
-          <input value="TEST23" required="" name="publisher" type="text">
+          <input required="" name="publisher" type="text" placeholder="Your name">
           <label>Prep time</label>
-          <input value="23" required="" name="cookingTime" type="number">
+          <input required="" name="cookingTime" type="number" min="1" placeholder="30">
           <label>Servings</label>
-          <input value="23" required="" name="servings" type="number">
+          <input required="" name="servings" type="number" min="1" placeholder="4">
         </div>
 
         <div class="upload__column">
           <h3 class="upload__heading">Ingredients</h3>
           <label>Ingredient 1</label>
-          <input value="0.5,kg,Rice" type="text" required="" name="ingredient-1" placeholder="Format: 'Quantity,Unit,Description'">
+          <input type="text" required="" name="ingredient-1" placeholder="Format: Quantity,Unit,Description">
           <label>Ingredient 2</label>
-          <input value="1,,Avocado" type="text" name="ingredient-2" placeholder="Format: 'Quantity,Unit,Description'">
+          <input type="text" name="ingredient-2" placeholder="Format: Quantity,Unit,Description">
           <label>Ingredient 3</label>
-          <input value=",,salt" type="text" name="ingredient-3" placeholder="Format: 'Quantity,Unit,Description'">
+          <input type="text" name="ingredient-3" placeholder="Format: Quantity,Unit,Description">
           <label>Ingredient 4</label>
           <input type="text" name="ingredient-4" placeholder="Format: 'Quantity,Unit,Description'">
           <label>Ingredient 5</label>
@@ -278,7 +273,7 @@
           <input type="text" name="ingredient-6" placeholder="Format: 'Quantity,Unit,Description'">
         </div>
 
-        <button class="btn upload__btn">
+        <button type="submit" class="btn upload__btn">
           <svg>
             <use href="/icons.21bad73c.svg#icon-upload-cloud"></use>
           </svg>
@@ -286,5 +281,7 @@
         </button>
       </form>
     </div>
+
+    <script type="module" src="/Forkify-js-app.4a59a05f.js"></script>
   
-<script src="/Forkify-js-app.3464ddca.js"></script></body></html>
+</body></html>

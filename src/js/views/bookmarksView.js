@@ -1,21 +1,23 @@
 import View from './view.js';
 import icons from 'url:../../img/icons.svg';
 
-class ResultsView extends View {
-  _parentElementSelector = '.results';
-  _errorMessage = 'No recipes found for your query. Please try again!';
-  _message = 'Start by searching for a recipe or an ingredient. Have fun!';
+class BookmarksView extends View {
+  _parentElementSelector = '.bookmarks__list';
+  _errorMessage = 'No bookmarks yet. Find a nice recipe and bookmark it :)';
+  _message = '';
 
-  _generateMarkup() {
-    return this._data.map(this._generateMarkupPreview.bind(this)).join('');
+  addHandlerRender(handler) {
+    ['hashchange', 'load'].forEach(ev =>
+      window.addEventListener(ev, handler)
+    );
   }
 
-  _generateMarkupPreview(result) {
-    const id = window.location.hash.slice(1);
-
-    return `
+  _generateMarkup() {
+    return this._data
+      .map(
+        result => `
       <li class="preview">
-        <a class="preview__link ${result.id === id ? 'preview__link--active' : ''}" href="#${result.id}">
+        <a class="preview__link" href="#${result.id}">
           <figure class="preview__fig">
             <img src="${result.image}" alt="${result.title}" />
           </figure>
@@ -38,8 +40,10 @@ class ResultsView extends View {
           </div>
         </a>
       </li>
-    `;
+    `
+      )
+      .join('');
   }
 }
 
-export default new ResultsView();
+export default new BookmarksView();
