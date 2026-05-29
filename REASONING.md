@@ -23,7 +23,7 @@ Steps during project
 <br>
 11.Per me instalu fractional ne terminal e shkrujm keshtu npm install fractional
 <br>
-12.
+12.Pagination përdoret për me i nda të dhënat në faqe më të vogla, në vend që me i kthy krejt përnjëherë.
 <br>
 13.
 <br>
