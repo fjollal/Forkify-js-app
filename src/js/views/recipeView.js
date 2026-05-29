@@ -1,21 +1,22 @@
+import View from './view.js';
 import icons from 'url:../../img/icons.svg';
 import {Fraction} from 'fractional';
 
-class RecipeView {
-  #parentElement = document.querySelector('.recipe');
-  #data;
-  #errorMessage='No recipes were found for your query.Please try again.'
-  #message='Successfully loaded recipe.';
+class RecipeView extends View {
+  _parentElement = document.querySelector('.recipe');
+  _data;
+  _errorMessage='No recipes were found for your query.Please try again.'
+  _message='Successfully loaded recipe.';
 
   render(data) {
-    this.#data = data;
-    const markup = this.#generateMarkup();
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._data = data;
+    const markup = this._generateMarkup();
+    this._clear();
+    this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  #clear() {
-    this.#parentElement.innerHTML = '';
+  _clear() {
+    this._parentElement.innerHTML = '';
   }
 
   renderSpinner() {
@@ -26,11 +27,11 @@ class RecipeView {
         </svg>
       </div>
     `;
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._clear();
+    this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  renderError(message=this.#message){
+  renderError(message=this._message){
     const markkup=`
     <div class="error">
             <div>
@@ -41,11 +42,11 @@ class RecipeView {
             <p>{message}</p>
           </div>
     `;
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._clear();
+    this._parentElement.insertAdjacentHTML('afterbegin', markup);
   };
 
-   renderMessage(message=this.#errorMessage){
+   renderMessage(message=this._errorMessage){
     const markkup=`
     <div class="message">
             <div>
@@ -56,8 +57,8 @@ class RecipeView {
             <p>{message}</p>
           </div>
     `;
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._clear();
+    this._parentElement.insertAdjacentHTML('afterbegin', markup);
   };
  
  
@@ -67,8 +68,8 @@ class RecipeView {
     ['hashchange','load'].forEach(ev=>window.addEventListener(ev,handler)); 
   }
 
-  #generateMarkup() {
-    const recipe = this.#data;
+  _generateMarkup() {
+    const recipe = this._data;
 
     return `
       <figure class="recipe__fig">
@@ -133,7 +134,7 @@ class RecipeView {
     `;
   }
 
-  #generateMarkupIngredient(ing) {
+  _generateMarkupIngredient(ing) {
     return `
       <li class="recipe__ingredient">
         <svg class="recipe__icon">
